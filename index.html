@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Birthday</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <h3>Is Your Birthdate Lucky?</h3>
-    <h3>Enter your Bithdate</h3>
-    <input type="date" id="birthdate" class="inputbox" placeholder="dd/mm/yyyy">
-    <h3>Enter your Lucky Number</h3>
-    <input type="number" id="luckyNumber" class="inputbox" placeholder ="Lucky Number">
-    <button id="btn">Lucky?</button>
-    <div id="result">Let's Find Out</div>
+    <header>Is Your Birthday Lucky?</header>
+    <div class="main">
+    <label for="dob">Enter your Bithday
+    <input type="date" id="birthdate" class="inputbox" placeholder="dd/mm/yyyy"></label>
+    <label for="num">Enter your Lucky Number
+    <input type="number" id="luckyNumber" class="inputbox" placeholder ="Lucky Number"></label>
+    <button id="btn" class="button">Lucky?</button>
+    <div id="result">Let's Find Out🎈🎈</div>
+    </div>
+    
+    <footer>
+        <p>&copy; Maitreyee Nath</p>
+        <ul>
+            <li class="social-icon"><a href="https://twitter.com/maitreyee__nath" target="__blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-icon"><a href="https://github.com/mnath30" target="__blank"><i class="fa fa-github"></i></a></li>
+            <li class="social-icon"><a href="https://www.linkedin.com/in/maitreyee-nath-211096127?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZcCecq5VS%2BKX4%2FTk0FLFKw%3D%3D" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
 <script src="./script.js"></script>
 </body>
 </html>

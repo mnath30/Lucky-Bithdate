@@ -3,31 +3,39 @@ var luckyNumber=document.querySelector('#luckyNumber');
 var btn=document.querySelector('#btn');
 var result=document.querySelector('#result');
 
-function calculateSum(date){
-    console.log(typeof(date));
-    date=date.replaceAll("-","");
+function calculateSum(dob){
+    dob=dob.replaceAll("-","");
     var sum=0;
-    for (var i=0;i<date.length;i++){
-        sum=sum+Number(date.charAt(i));
+    for (var i=0;i<dob.length;i++){
+        sum=sum+Number(dob.charAt(i));
     }
-    console.log(sum);
     return(sum);
 
 }
 
 function clickHandler(){
-    var sumofdate=calculateSum(birthDate.value);
+    var dob=birthDate.value;
     var luckynum=Number(luckyNumber.value);
-    console.log(sumofdate,luckynum);
-    if ((sumofdate%luckynum)==0){
-        result.innerHTML='<h3>Yay you have a lucky birthdate</h3>';
-        console.log("yes");
+    if (dob && luckynum){
+        if(luckynum>0){
+            var sumofdate=calculateSum(dob);
+            if ((sumofdate%luckynum)==0){
+                result.innerText='Yay you have a lucky birthday 🥳';
+            }
+            else{
+                result.innerText ='Sorry your birthday is not lucky 🙁';
+            }
+        }
+        else{
+            result.innerText = 'Lucky number cannot be negative😶';
+        }
+
+        
     }
     else{
-        result.innerHTML ="<h3>Sorry your birthday and number are not lucky</h3>";
-        console.log("no")
+        result.innerText='Please enter both the fields😑';
     }
-    console.log(result);
+    
 }
 
 btn.addEventListener("click",clickHandler);
