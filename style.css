@@ -4,6 +4,10 @@
     --light-pink:#EBCBF4;
     --darker-pink:#D598BC;
     --brownish:#BD7283;
+    --black:#000000;
+    --red:#FF0000;
+    --light-red:#FF7F7F;
+
 }
 
 body{
@@ -20,9 +24,11 @@ header{
     background-color:var(--light-pink);
     padding:2rem;
     font-size:2rem;
-    margin-bottom:3rem;
+    margin-bottom:1rem;
 
 }
+
+
 .main{
     min-height: 80vh;
     max-width:60%;
@@ -35,6 +41,7 @@ input{
 }
 label{
     font-size:1.5rem;
+    padding-top: 0.2rem;
 }
 .inputbox{
     width: 100%;
@@ -81,7 +88,39 @@ p{
     font-size:1.6rem;
 }
 .fa{
-    color:black;
+    color:var(--black);
+}
+.privacy-message-div{
+    opacity:0.8;
+    height: fit-content;
+    margin: auto;
+    padding: 0 4rem;
+    border: 2px solid var(--red);
+    width: 65%;
+    background-color: var(--light-red);
+    /* position: relative;
+    bottom:2.8rem; */
+}
+.privacy-text{
+    display: inline;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0.2rem 0.8rem;
+    margin-bottom: 0.7rem;
+    
+    
+
+
+}
+.privacybutton{
+   color:red;
+   border-radius: 0.2rem;
+   margin: 0.2rem;
+   border: 2px solid Var(--red);
+    
+}
+.privacybutton:hover{
+    background-color: rgb(231, 149, 149);
 }
 
 

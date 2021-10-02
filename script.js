@@ -2,6 +2,13 @@ var birthDate=document.querySelector('#birthdate');
 var luckyNumber=document.querySelector('#luckyNumber');
 var btn=document.querySelector('#btn');
 var result=document.querySelector('#result');
+var privacy=document.querySelector("#privacy-btn");
+
+
+function privacyDiv(){
+    console.log("here");
+    document.querySelector(".privacy-message-div").style.opacity="0";
+}
 
 function calculateSum(dob){
     dob=dob.replaceAll("-","");
@@ -39,3 +46,4 @@ function clickHandler(){
 }
 
 btn.addEventListener("click",clickHandler);
+privacy.addEventListener("click",privacyDiv);
